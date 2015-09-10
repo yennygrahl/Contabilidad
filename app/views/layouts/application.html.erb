@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adn</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'default', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'default', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+
+
+<div id="wrapper">
+    <div id="sidebar-wrapper">
+        
+        <%= image_tag("logo.png", width: "50%"); %>
+        
+        <!--
+        <img src="images/logo3.png" width="100%"/>
+        -->
+        <div class="container" style="width: 100%">    
+        
+            <div id="cssmenu" style="margin-top: 20px;">
+                <ul>
+                    <li class='has-sub'><a href='#'><i class="icon-cog"></i><span>Ventas</span></a>
+                        <ul>
+                            <li class='last'><a href='#'><span>Cuenta Corriente</span></a></li>
+                            <li class='last'><a href='#'><span>Pedidos</span></a></li>
+                            <li class='last'><a href='#'><span>Proveedor</span></a></li>
+                            <li class='last'><a href='#'><span>Configuracion</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="cssmenu">
+                <ul>
+                    <li><a href='#'><span>Stock</span></a></li>
+                </ul>
+            </div>
+            
+            <div id="cssmenu">
+                <ul>
+                    <li class='last'><a href='#'><span>Listar</span></a></li>
+                </ul>
+            </div>
+            
+            <div id="cssmenu">
+                <ul>
+                    <li class='has-sub'><a href='#'><span>Configuracion</span></a>
+                        <ul>
+                            <li class='last'><a href='#'><span>Usuarios</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="cssmenu">
+                <ul>
+                    <li class=''><a href='#'><span>Cerrar Sesion</span></a></li>
+                </ul>
+            </div>
+  
+        </div>
+    </div>
+    
+    <div id="page-content-wrapper">
+        <div id="busqueda" style="padding-top: 0px;">
+         
+            	<form class="navbar-form navbar-left" role="search">
+				    <input type="text" class="form-control" placeholder="Buscar">
+				
+				  <button type="submit" class="btn btn-default">Buscar</button>
+
+				</form>
+				</br>
+				</br>
+				</br>
+            
+        </div>
+        
+        <div class="page-content"> 
+            <div class="container-fluid">
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-md-12" style="padding-left: 20px;">
+                    
+  
+                        <%= yield %>
+                        <!-- content of page -->
+                                                
+                        
+                                              
+                    </div>
+                </div>
+           </div> 
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
