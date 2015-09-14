@@ -34,7 +34,7 @@
 #page-content-wrapper #busqueda{
     position: fixed;
     z-index: 1002;
-    height: 45px;
+    height: 49px;
     width: inherit;
     -webkit-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 3px 5px 0px rgba(0,0,0,0.75);
@@ -78,4 +78,7 @@
       transition: all 0.4s ease 0s;
     }
 
+}
+ul.menu{
+  padding-left: -60px;
 }

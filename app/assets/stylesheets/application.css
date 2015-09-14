@@ -13,3 +13,10 @@
  *= require_tree .
  *= require_self
  */
+span.obligatorio{
+    color: red;
+    font-size: 18px;
+}
+a.botones{
+	border-radius: 10px 10px 10px 10px;
+}

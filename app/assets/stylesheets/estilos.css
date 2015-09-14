@@ -3,9 +3,13 @@
 
 /* Menu principal */
 
-/* Titulos de paginas 
-.page-header{margin: 0px; padding:0px; background-color: rgba(1, 1, 1, 0.1); background-attachment: fixed;}
-.titulo{ text-align: left; font-family: "Arial Black"; height: 10px; padding-top: 2px;}
+/* Titulos de paginas */
+/*.page-header{margin: 0px; padding:0px; background-color: rgba(1, 1, 1, 0.1); background-attachment: fixed;}
+*/
+p.titulo{ 
+	text-align: left; font-family: "Arial Black"; 
+	padding-top: 8px;
+}
 
  /* Subtitulos de paginas */
  
