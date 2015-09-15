@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   get 'cuentas/cuentas'
 
+   get 'periodo_fiscal/index'
+
+    get 'periodo_fiscal/periodo_fiscal'
+
   get 'cuentas/index'
 
   get 'menu/index'

@@ -1,0 +1,81 @@
+
+
+<div class = "row" >  
+	<div class = "col-md-12" style = "margin-top: 20px;">
+		<%= form_for :periodo_fiscal, :validate => true, html: {class: "form-horizontal verificar"} do |periodo_fiscal| %>
+
+		<div class = "col-md-6" style = "margin-top: 20px;">
+			<h3>Periodo Fiscal</h3>
+		</div>
+		<div class = "col-md-6" style = "margin-top: 20px;">
+			<div class = "col-md-6" style = "margin-top: 20px;"></div>
+			<div class = "col-md-6" style = "margin-top: 20px;"></div>
+		</div>
+	</div>
+</div>
+
+<div class = "row" >  
+	<div class = "col-md-12" style = "margin-top: 20px;"></div>
+</div>
+
+	<div class = "row" >
+		<div class = "col-sm-1"></div>
+		 <div class = "col-sm-5">
+		 	<div class = "col-sm-4">
+			 
+ 					<div class="form-group">
+ 				 		<%= periodo_fiscal.label :anho, raw('<span class="obligatorio">*</span>Periodo Fiscal')%>
+  
+		 		 	</div>
+		    	</div>
+		        <div class = "col-sm-8">
+		 	     	<input type="periodo_fiscal" class="form-control" id="perido_fiscal" placeholder="">	
+		        </div> 
+		    </div>
+		 	<div class = "col-sm-6"></div>
+		 </div>
+		 <div class = "row" > 
+			<div class = "col-sm-1"></div>
+		 	<div class = "col-sm-5">
+		 		<div class = "col-sm-4">
+		 			
+		 				 <div class="form-group">
+		 				 	<%= periodo_fiscal.label :fecha_inicio, raw('<span class="obligatorio">*</span>Fecha Inicio')%>
+				 		 </div>
+		 		</div>
+	        	<div class = "col-sm-8">
+	        		<%= periodo_fiscal.text_field(:fecha_inicio, size:15, maxlength:15, :required => true, :class => "form-control") %>
+	 	    		
+	       	    </div>	
+		  </div>
+		 	 	
+		 	<div class = "col-sm-5">
+		 		<div class = "col-sm-4">
+		 			<form>
+ 				 	<div class="form-group">
+ 				 		<%= periodo_fiscal.label :fecha_fin, raw('<span class="obligatorio">*</span>Fecha Final')%>
+  					 	 
+		 		    </div>
+				</div>
+	        	<div class = "col-sm-8">
+	        		<%= periodo_fiscal.text_field(:fecha_fin, size:15, maxlength:15, :required => true, :class => "form-control") %>
+	 	    		
+	       		</div>
+		   	 	</div>
+				<div class = "col-sm-1"></div>	
+			</div>
+		</form>
+<% end %>
+
+<div class = "col-md-12" style = "margin-top: 20px;">
+
+<table class="table table-condensed">
+  	<tr>
+       <td><strong>Periodo de Apertura</strong></td>
+       <td><strong>Inicio del Periodo</strong></td>
+       <td><strong>Fin del Periodo</strong></td>
+
+	</tr>
+</table>
+
+ 
